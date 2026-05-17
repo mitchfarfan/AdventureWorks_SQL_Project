@@ -4,34 +4,39 @@ A structured SQL analysis designed to demonstrate commercial thinking, analytica
 
 ---
 
-## About Me
-I’m a business professional transitioning into BI and analytics, with a focus on structured problem‑solving and commercially grounded analysis.  
-This project was built to demonstrate how I approach real business questions using clean, auditable SQL rather than isolated technical exercises.  
-It highlights my ability to translate transactional data into decision‑ready insights, communicate findings clearly, and apply analytical methods that align with how organisations operate.  
-I approach analytics with a focus on clarity, structure, and business relevance — the same principles applied throughout this project.
-
-## Skills Demonstrated
-- Analytical SQL (CTEs, window functions, financial modelling)
-- Business insight generation
-- Data storytelling and structured communication
-- Commercial thinking and prioritisation
-
-## Technologies Used
-- PostgreSQL
-- Visual Studio Code
-- GitHub for version control
-
----
-
-You can find all SQL scripts here: `/sql/`
-
----
-
 ## 1. Overview
 This project demonstrates end‑to‑end analytical SQL capability using the AdventureWorks dataset.  
 The analysis focuses on revenue, profitability, customer value, product trends, and operational anomalies — the core areas a BI Analyst or Analytics Professional is expected to handle.
 
 The SQL is written for **PostgreSQL**, using **CTEs**, **window functions**, and **financial logic**.
+
+
+## How This Project Demonstrates BI Thinking
+This project mirrors the analytical workflow used in BI teams:
+
+- structured ingestion and cleaning of raw transactional data  
+- referential integrity validation to ensure trustworthy modelling  
+- business‑logic modelling using CTEs and financial fields  
+- insight generation aligned to commercial priorities and decision‑making  
+
+## Why SQL First
+This phase focuses on analytical traceability — producing clean, auditable outputs before visualisation.  
+Power BI will be layered on top once the analytical foundation is validated and stable.
+
+## Key SQL Patterns Used
+- window functions for ranking and trend detection  
+- CTEs for readable, modular business logic  
+- integrity checks for grain, keys, and completeness  
+- financial modelling using cost, price, and derived profit metrics  
+
+## Business Questions Answered
+A structured set of commercial questions covering:
+
+- revenue concentration  
+- margin performance  
+- customer value  
+- product trends  
+- operational anomalies  
 
 ---
 
@@ -68,36 +73,41 @@ These findings support pricing optimisation, SKU rationalisation, and operationa
 
 ## 5. Analytical Areas Covered
 
-### 5.1 Revenue Concentration
-- Identifies top‑performing SKUs  
-- Uses CTEs + window functions for ranking and running %  
-- Highlights commercial dependency on a small product set  
+### 5.1 Revenue Concentration (3A)
+- Identifies top‑performing SKUs
+- Uses CTEs + window functions for ranking and running %
+- Highlights commercial dependency on a small product set 
 
-### 5.2 Profitability Analysis
+### 5.2 Profitability Analysis (3B)
 - Clean profit modelling using aggregated CTEs  
 - Ranks SKUs by total profit contribution  
 - Surfaces margin‑dilutive products  
 
-### 5.3 Trend Analysis (3‑Month Moving Average)
-- Detects declining SKUs  
-- Uses window functions for smoothing  
-- Supports early intervention on softening demand  
+### 5.3 Declining Product Trends (3C)
+- Detects declining SKUs using 3‑month moving averages
+- Uses window functions for smoothing
+- Supports early intervention on softening demand
 
-### 5.4 Lowest‑Profit SKUs
-- Identifies products that consume capacity but add limited value  
-- Supports pricing review or SKU rationalisation  
+### 5.4 Lowest‑Profit Products (3D)
+- Identifies products that consume capacity but add limited value
+- Supports pricing review or SKU rationalisation
 
-### 5.5 Customer Value Analysis
-- Ranks customers by revenue contribution  
-- Confirms diversified customer base and low churn risk  
+### 5.5 Top Value Customers (3E)
+- Ranks customers by revenue contribution
+- Confirms diversified customer base and low churn risk
 
-### 5.6 Anomaly Detection
-- Compares daily sales to overall average  
-- Highlights promotional spikes and potential stockouts  
+### 5.6 Daily Sales Anomalies (3F)
+- Compares daily sales to overall average
+- Highlights promotional spikes and potential stockouts
 
-### 5.7 Sales Distribution
-- Shows right‑skewed distribution  
-- Quantifies contribution of top 1, 3, 5, 10 SKUs  
+### 5.7 Sales Distribution by Product (3G)
+- Shows right‑skewed distribution
+- Quantifies contribution of top 1, 3, 5, 10 SKUs
+
+### 5.8 Profit Margin Analysis (3H)
+- Calculates margin % by SKU
+- Highlights categories with structurally low margins
+- Supports pricing and cost‑management decisions 
 
 ---
 
