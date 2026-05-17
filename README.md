@@ -2,6 +2,17 @@
 
 A structured SQL analysis designed to demonstrate commercial thinking, analytical capability, and clean, auditable SQL patterns.
 
+## 📎 Quick Links
+
+**Download Excel Workbook (Interactive Analysis)**  
+[AdventureWorks_Analysis.xlsx](https://github.com/mitchfarfan/AdventureWorks_SQL_Project/raw/main/AdventureWorks_Analysis.xlsx)
+
+**View Full SQL Project File**  
+[AdventureWorks_SQL_Project.sql](https://github.com/mitchfarfan/AdventureWorks_SQL_Project/blob/main/AdventureWorks_SQL_Project.sql)
+
+**Screenshots (Workbook & Results)**  
+https://github.com/mitchfarfan/AdventureWorks_SQL_Project/tree/main/Screenshots
+
 ---
 
 ## 1. Overview
@@ -53,6 +64,20 @@ A structured set of commercial questions covering:
 - `/sql/` — All SQL scripts used in the analysis  
 - `/screenshots/` — Output screenshots and visual evidence  
 - `README.md` — Project overview and business insights  
+
+## 3.1 Excel Output Workbook
+The `/excel/AdventureWorks_Analysis.xlsx` file contains:
+
+- a consolidated results sheet (3A–3H)
+- navigation links back to the Executive Summary
+- clean, formatted tables for all analytical outputs
+- a landing page summarising insights and business context
+
+This workbook serves as the packaged, analyst‑ready output of the SQL analysis.
+
+**Download Excel Workbook (Interactive Analysis)**  
+[AdventureWorks_Analysis.xlsx](https://github.com/mitchfarfan/AdventureWorks_SQL_Project/raw/main/AdventureWorks_Analysis.xlsx)
+
 
 ---
 
