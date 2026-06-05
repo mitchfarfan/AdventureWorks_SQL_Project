@@ -1,167 +1,190 @@
 # AdventureWorks SQL Analysis — Business Insights & Analytical SQL Portfolio
 
-A structured SQL analysis designed to demonstrate commercial thinking, analytical capability, and clean, auditable SQL patterns.
+A complete SQL‑driven analytical project demonstrating mid‑level BI capability, commercial reasoning, and clean, auditable SQL patterns across core business performance areas.
 
-## 📎 Quick Links
+This project shows how raw transactional data can be transformed into decision‑ready insights using structured SQL, financial modelling, and BI‑aligned analytical workflows.
 
-**Download Excel Workbook (Interactive Analysis)**  
+---
+
+## Quick Links
+
+**Excel Workbook (Interactive Analysis)**  
 [AdventureWorks_Analysis.xlsx](https://github.com/mitchfarfan/AdventureWorks_SQL_Project/raw/main/AdventureWorks_Analysis.xlsx)
 
-**View Full SQL Project File**  
+**Full SQL Project File**  
 [AdventureWorks_SQL_Project.sql](https://github.com/mitchfarfan/AdventureWorks_SQL_Project/blob/main/AdventureWorks_SQL_Project.sql)
 
-**Screenshots (Workbook & Results)**  
+**Execution Screenshots (VS Code)**  
 https://github.com/mitchfarfan/AdventureWorks_SQL_Project/tree/main/Screenshots
 
 ---
 
-## 1. Overview
-This project demonstrates end‑to‑end analytical SQL capability using the AdventureWorks dataset.  
-The analysis focuses on revenue, profitability, customer value, product trends, and operational anomalies — the core areas a BI Analyst or Analytics Professional is expected to handle.
+## What This Project Demonstrates
 
-The SQL is written for **PostgreSQL**, using **CTEs**, **window functions**, and **financial logic**.
-
-
-## How This Project Demonstrates BI Thinking
-This project mirrors the analytical workflow used in BI teams:
-
-- structured ingestion and cleaning of raw transactional data  
-- referential integrity validation to ensure trustworthy modelling  
-- business‑logic modelling using CTEs and financial fields  
-- insight generation aligned to commercial priorities and decision‑making  
-
-## Why SQL First
-This phase focuses on analytical traceability — producing clean, auditable outputs before visualisation.  
-Power BI will be layered on top once the analytical foundation is validated and stable.
-
-## Key SQL Patterns Used
-- window functions for ranking and trend detection  
-- CTEs for readable, modular business logic  
-- integrity checks for grain, keys, and completeness  
-- financial modelling using cost, price, and derived profit metrics  
-
-## Business Questions Answered
-A structured set of commercial questions covering:
-
-- revenue concentration  
-- margin performance  
-- customer value  
-- product trends  
-- operational anomalies  
+-**Analytical SQL proficiency** — CTEs, window functions, financial logic, anomaly detection
+-**Commercial thinking** — revenue concentration, margin performance, customer value, product lifecycle trends
+-**Data integrity discipline** — validating grain, keys, and completeness before modelling
+-**BI workflow alignment** — modular SQL logic, reproducible outputs, packaged Excel deliverables
+-**Insight communication** — clear summaries, structured outputs, and business‑ready recommendations
 
 ---
 
-## 2. Dataset Summary
-- **Fact table:** `fact_sales` — daily sales transactions  
-- **Dimensions:** `dim_products`, `dim_customers`  
-- **Time granularity:** daily  
-- **Financial fields:** product price, product cost  
+## 1. Project Overview
+
+This project delivers an end‑to‑end analytical SQL workflow using the **AdventureWorks** dataset.
+
+The analysis focuses on the commercial levers most relevant to BI and analytics roles:
+
+-**revenue concentration**
+-**profit and margin performance**
+-**customer value distribution**
+-**product lifecycle and declining trends**
+-**operational anomalies**
+-**sales distribution patterns**
+
+SQL is written for **PostgreSQL**, using **CTEs**, **window functions**, and **financial modelling** to ensure clarity, auditability, and commercial relevance.
+
+A packaged Excel workbook consolidates all outputs into a clean, analyst‑ready deliverable.
+
+---
+
+## 2. Why This Project Matters for BI Roles
+
+This project mirrors real BI team workflows by demonstrating:
+
+-**structured ingestion** of transactional data
+-**referential integrity checks** to ensure trustworthy modelling
+-**modular SQL logic** using CTEs for readability and auditability
+-**financial modelling** using price, cost, and derived profit metrics
+-**trend and anomaly detection** using window functions
+-**insight generation** aligned to commercial decision‑making
+-**packaged outputs** suitable for stakeholders
+
+This is the type of analytical foundation expected in BI, analytics, and data‑driven commercial roles.
+
+---
+
+## 3. Dataset Summary
+
+- **Fact table:** `fact_sales` — daily sales transactions
+- **Dimensions:** `dim_products`, `dim_customers`
+- **Time granularity:** daily
+- **Financial fields:** product price, product cost
 - **Exclusions:** discounts, returns, freight (future enhancement)
 
 ---
 
-## 3. Repository Structure
-- `/sql/` — All SQL scripts used in the analysis  
-- `/screenshots/` — Output screenshots and visual evidence  
-- `README.md` — Project overview and business insights  
+## 4. Repository Structure
 
-## 3.1 Excel Output Workbook
-The `/excel/AdventureWorks_Analysis.xlsx` file contains:
-
-- a consolidated results sheet (3A–3H)
-- navigation links back to the Executive Summary
-- clean, formatted tables for all analytical outputs
-- a landing page summarising insights and business context
-
-This workbook serves as the packaged, analyst‑ready output of the SQL analysis.
-
-**Download Excel Workbook (Interactive Analysis)**  
-[AdventureWorks_Analysis.xlsx](https://github.com/mitchfarfan/AdventureWorks_SQL_Project/raw/main/AdventureWorks_Analysis.xlsx)
-
+- `/sql/` — All SQL scripts used in the analysis
+- `/screenshots/` — Execution screenshots (VS Code)
+- `/excel/` — Packaged Excel workbook
+- `README.md` — Project overview, insights, and documentation
 
 ---
 
-## 4. Executive Summary
-The analysis highlights several key commercial insights:
+## 5. Executive Summary — Key Insights
 
-- **Revenue and profit are highly concentrated** — top 20 SKUs contribute ~59% of revenue and ~60% of profit.  
-- **Margin dependency is high**, with a small SKU set driving most value.  
-- **Several SKUs show declining demand**, indicating potential delisting or pricing review.  
-- **Lowest‑profit SKUs are not loss‑making**, but dilute margin and consume operational capacity.  
-- **Customer concentration risk is extremely low** — top 20 customers contribute only 0.84% of revenue.  
-- **Daily sales anomalies** reveal promotional spikes and potential stockout days.  
-- **Sales distribution is right‑skewed**, dominated by low‑price consumables.
+Across all analytical modules (3A–3H), several consistent commercial themes emerge:
 
-These findings support pricing optimisation, SKU rationalisation, and operational planning.
+### 1. Revenue & Profit Concentration
+A small set of SKUs drives a disproportionately large share of revenue and profit.
+This creates **product dependency risk** and highlights the importance of supply chain reliability for top performers.
 
----
+### 2. Margin Variability
+High‑revenue SKUs are not always the most profitable.
+Several mid‑volume products deliver stronger margins, indicating **misaligned promotional focus**.
 
-## 5. Analytical Areas Covered
+### 3. Declining Product Trends
+Multiple SKUs show sustained downward trends, signalling potential **lifecycle decline, competitive pressure, or reduced promotional activity**.
 
-### 5.1 Revenue Concentration (3A)
-- Identifies top‑performing SKUs
-- Uses CTEs + window functions for ranking and running %
-- Highlights commercial dependency on a small product set 
+### 4. Customer Value Distribution
+Customer concentration risk is extremely low — revenue is widely distributed across the customer base.
+This supports a **broad acquisition strategy** rather than heavy retention focus.
 
-### 5.2 Profitability Analysis (3B)
-- Clean profit modelling using aggregated CTEs  
-- Ranks SKUs by total profit contribution  
-- Surfaces margin‑dilutive products  
+### 5. Operational Anomalies
+Daily sales anomalies reveal **promotional spikes, stockouts,** or **data quality gaps**.
+These require monitoring to improve forecasting and operational planning.
 
-### 5.3 Declining Product Trends (3C)
-- Detects declining SKUs using 3‑month moving averages
-- Uses window functions for smoothing
-- Supports early intervention on softening demand
+### 6. Sales Distribution
+Sales are heavily **right‑skewed**, dominated by low‑price consumables.
+This impacts inventory planning and margin strategy.
 
-### 5.4 Lowest‑Profit Products (3D)
-- Identifies products that consume capacity but add limited value
-- Supports pricing review or SKU rationalisation
-
-### 5.5 Top Value Customers (3E)
-- Ranks customers by revenue contribution
-- Confirms diversified customer base and low churn risk
-
-### 5.6 Daily Sales Anomalies (3F)
-- Compares daily sales to overall average
-- Highlights promotional spikes and potential stockouts
-
-### 5.7 Sales Distribution by Product (3G)
-- Shows right‑skewed distribution
-- Quantifies contribution of top 1, 3, 5, 10 SKUs
-
-### 5.8 Profit Margin Analysis (3H)
-- Calculates margin % by SKU
-- Highlights categories with structurally low margins
-- Supports pricing and cost‑management decisions 
+**Overall:**  
+The business is **commercially strong but operationally imbalanced**, with clear opportunities to improve margin, product mix, and forecasting accuracy.
 
 ---
 
-## 6. Recommended Business Actions
-- **Review pricing and margin strategy** for lowest‑profit SKUs  
-- **Prioritise supply chain reliability** for top‑profit SKUs  
-- **Focus marketing on broad acquisition**, not retention, due to low customer concentration  
-- **Investigate anomaly days** for stockouts or promotions  
-- **Consider SKU rationalisation** for long‑tail, low‑volume products  
+## 6. Analytical Modules (3A–3H)
+
+Each module includes SQL logic, results, and business interpretation.
+
+### 3A — Revenue Concentration
+-**Identifies top‑performing SKUs** using CTEs + window functions
+-**Highlights dependency** on a narrow product set
+
+### 3B — Profitability Analysis
+-**Models total profit** using aggregated CTEs
+-**Surfaces margin‑dilutive products** and high‑value SKUs
+
+### 3C — Declining Product Trends
+-**Uses 3‑month moving averages** to detect downward trends
+-**Supports lifecycle management** and pricing review
+
+### 3D — Lowest‑Profit Products
+-**Identifies SKUs** that generate revenue but dilute margin
+-**Useful for SKU rationalisation** and cost review
+
+### 3E — Top Value Customers
+-**Ranks customers** by revenue contribution
+-**Confirms low concentration risk**
+
+### 3F — Daily Sales Anomalies
+-**Detects spikes and dips** relative to average daily sales
+-**Useful for operational monitoring** and forecasting
+
+### 3G — Sales Distribution by Product
+-**Quantifies contribution** of top 1, 3, 5, 10 SKUs
+-**Reveals right‑skewed distribution**
+
+### 3H — Profit Margin Analysis
+-**Calculates margin %** by SKU and category
+-**Supports pricing and supplier negotiation decisions**
 
 ---
 
-## 7. Future Enhancements
-With additional time, the following improvements would be implemented:
+## 7. Recommended Business Actions
 
-- Incorporate **discounts, returns, and freight** for more accurate profit modelling  
-- Build a **Power BI dashboard** with drill‑downs and trend visuals  
-- Introduce **customer segmentation** (RFM or clustering)  
-- Add **forecasting** for declining SKUs  
-- Extend analysis to **inventory, lead times, and stockouts**  
+-**Shift focus from revenue to profit** — prioritise high‑margin SKUs in marketing and promotions
+-**Rationalise long‑tail SKUs** — review low‑volume, low‑profit products for delisting or repositioning
+-**Strengthen pricing governance** — revisit pricing for margin‑dilutive SKUs
+-**Investigate declining SKUs** — assess competitive, pricing, or seasonality factors
+-**Improve operational monitoring** — implement anomaly detection dashboards
+-**Leverage customer diversification** — focus on broad acquisition rather than retention
 
 ---
 
-## 8. How to Run the SQL
-- Queries are written for **PostgreSQL**  
-- Each section is self‑contained and can be executed independently  
-- CTEs and window functions are used for clarity and auditability  
+## 8. Future Enhancements
+
+Planned improvements include:
+
+-**Incorporate discounts, returns, and freight** for more accurate profit modelling
+-**Build a Power BI dashboard** with drill‑downs and trend visuals
+-**Introduce customer segmentation** (RFM or clustering)
+-**Add forecasting** for declining SKUs
+-**Extend analysis** to inventory, lead times, and stockouts
+
+---
+
+## 9. How to Run the SQL
+
+- Queries are written for **PostgreSQL**
+- Each section is self‑contained and can be executed independently
+- CTEs and window functions are used for clarity and auditability
 
 ---
 
 ## Closing Note
-This project reflects my approach to analytical work: structured, commercially grounded, and focused on delivering decision‑ready insights.
+
+This project reflects my approach to analytical work:
+**structured, commercially grounded, and focused on delivering decision‑ready insights.**
