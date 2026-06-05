@@ -21,11 +21,11 @@ https://github.com/mitchfarfan/AdventureWorks_SQL_Project/tree/main/Screenshots
 
 ## What This Project Demonstrates
 
--**Analytical SQL proficiency** — CTEs, window functions, financial logic, anomaly detection
--**Commercial thinking** — revenue concentration, margin performance, customer value, product lifecycle trends
--**Data integrity discipline** — validating grain, keys, and completeness before modelling
--**BI workflow alignment** — modular SQL logic, reproducible outputs, packaged Excel deliverables
--**Insight communication** — clear summaries, structured outputs, and business‑ready recommendations
+- **Analytical SQL proficiency** — CTEs, window functions, financial logic, anomaly detection
+- **Commercial thinking** — revenue concentration, margin performance, customer value, product lifecycle trends
+- **Data integrity discipline** — validating grain, keys, and completeness before modelling
+- **BI workflow alignment** — modular SQL logic, reproducible outputs, packaged Excel deliverables
+- **Insight communication** — clear summaries, structured outputs, and business‑ready recommendations
 
 ---
 
@@ -35,12 +35,12 @@ This project delivers an end‑to‑end analytical SQL workflow using the **Adve
 
 The analysis focuses on the commercial levers most relevant to BI and analytics roles:
 
--**revenue concentration**
--**profit and margin performance**
--**customer value distribution**
--**product lifecycle and declining trends**
--**operational anomalies**
--**sales distribution patterns**
+- **revenue concentration**
+- **profit and margin performance**
+- **customer value distribution**
+- **product lifecycle and declining trends**
+- **operational anomalies**
+- **sales distribution patterns**
 
 SQL is written for **PostgreSQL**, using **CTEs**, **window functions**, and **financial modelling** to ensure clarity, auditability, and commercial relevance.
 
@@ -52,13 +52,13 @@ A packaged Excel workbook consolidates all outputs into a clean, analyst‑ready
 
 This project mirrors real BI team workflows by demonstrating:
 
--**structured ingestion** of transactional data
--**referential integrity checks** to ensure trustworthy modelling
--**modular SQL logic** using CTEs for readability and auditability
--**financial modelling** using price, cost, and derived profit metrics
--**trend and anomaly detection** using window functions
--**insight generation** aligned to commercial decision‑making
--**packaged outputs** suitable for stakeholders
+- **structured ingestion** of transactional data
+- **referential integrity checks** to ensure trustworthy modelling
+- **modular SQL logic** using CTEs for readability and auditability
+- **financial modelling** using price, cost, and derived profit metrics
+- **trend and anomaly detection** using window functions
+- **insight generation** aligned to commercial decision‑making
+- **packaged outputs** suitable for stakeholders
 
 This is the type of analytical foundation expected in BI, analytics, and data‑driven commercial roles.
 
@@ -120,47 +120,47 @@ The business is **commercially strong but operationally imbalanced**, with clear
 Each module includes SQL logic, results, and business interpretation.
 
 ### 3A — Revenue Concentration
--**Identifies top‑performing SKUs** using CTEs + window functions
--**Highlights dependency** on a narrow product set
+- **Identifies top‑performing SKUs** using CTEs + window functions
+- **Highlights dependency** on a narrow product set
 
 ### 3B — Profitability Analysis
--**Models total profit** using aggregated CTEs
--**Surfaces margin‑dilutive products** and high‑value SKUs
+- **Models total profit** using aggregated CTEs
+- **Surfaces margin‑dilutive products** and high‑value SKUs
 
 ### 3C — Declining Product Trends
--**Uses 3‑month moving averages** to detect downward trends
--**Supports lifecycle management** and pricing review
+- **Uses 3‑month moving averages** to detect downward trends
+- **Supports lifecycle management** and pricing review
 
 ### 3D — Lowest‑Profit Products
--**Identifies SKUs** that generate revenue but dilute margin
--**Useful for SKU rationalisation** and cost review
+- **Identifies SKUs** that generate revenue but dilute margin
+- **Useful for SKU rationalisation** and cost review
 
 ### 3E — Top Value Customers
--**Ranks customers** by revenue contribution
--**Confirms low concentration risk**
+- **Ranks customers** by revenue contribution
+- **Confirms low concentration risk**
 
 ### 3F — Daily Sales Anomalies
--**Detects spikes and dips** relative to average daily sales
--**Useful for operational monitoring** and forecasting
+- **Detects spikes and dips** relative to average daily sales
+- **Useful for operational monitoring** and forecasting
 
 ### 3G — Sales Distribution by Product
--**Quantifies contribution** of top 1, 3, 5, 10 SKUs
--**Reveals right‑skewed distribution**
+- **Quantifies contribution** of top 1, 3, 5, 10 SKUs
+- **Reveals right‑skewed distribution**
 
 ### 3H — Profit Margin Analysis
--**Calculates margin %** by SKU and category
--**Supports pricing and supplier negotiation decisions**
+- **Calculates margin %** by SKU and category
+- **Supports pricing and supplier negotiation decisions**
 
 ---
 
 ## 7. Recommended Business Actions
 
--**Shift focus from revenue to profit** — prioritise high‑margin SKUs in marketing and promotions
--**Rationalise long‑tail SKUs** — review low‑volume, low‑profit products for delisting or repositioning
--**Strengthen pricing governance** — revisit pricing for margin‑dilutive SKUs
--**Investigate declining SKUs** — assess competitive, pricing, or seasonality factors
--**Improve operational monitoring** — implement anomaly detection dashboards
--**Leverage customer diversification** — focus on broad acquisition rather than retention
+- **Shift focus from revenue to profit** — prioritise high‑margin SKUs in marketing and promotions
+- **Rationalise long‑tail SKUs** — review low‑volume, low‑profit products for delisting or repositioning
+- **Strengthen pricing governance** — revisit pricing for margin‑dilutive SKUs
+- **Investigate declining SKUs** — assess competitive, pricing, or seasonality factors
+- **Improve operational monitoring** — implement anomaly detection dashboards
+- **Leverage customer diversification** — focus on broad acquisition rather than retention
 
 ---
 
@@ -168,11 +168,11 @@ Each module includes SQL logic, results, and business interpretation.
 
 Planned improvements include:
 
--**Incorporate discounts, returns, and freight** for more accurate profit modelling
--**Build a Power BI dashboard** with drill‑downs and trend visuals
--**Introduce customer segmentation** (RFM or clustering)
--**Add forecasting** for declining SKUs
--**Extend analysis** to inventory, lead times, and stockouts
+- **Incorporate discounts, returns, and freight** for more accurate profit modelling
+- **Build a Power BI dashboard** with drill‑downs and trend visuals
+- **Introduce customer segmentation** (RFM or clustering)
+- **Add forecasting** for declining SKUs
+- **Extend analysis** to inventory, lead times, and stockouts
 
 ---
 
