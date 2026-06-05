@@ -7,6 +7,7 @@ This project shows how raw transactional data can be transformed into decision�
 ---
 
 ## Quick Links
+The Excel workbook is the primary way to explore the SQL outputs — each module (3A–3H) is packaged with insights and formatted tables.
 
 **Excel Workbook (Interactive Analysis)**  
 [AdventureWorks_Analysis.xlsx](https://github.com/mitchfarfan/AdventureWorks_SQL_Project/raw/main/AdventureWorks_Analysis.xlsx)
@@ -113,6 +114,8 @@ This impacts inventory planning and margin strategy.
 **Overall:**  
 The business is **commercially strong but operationally imbalanced**, with clear opportunities to improve margin, product mix, and forecasting accuracy.
 
+This analysis highlights the difference between headline performance (revenue) and true commercial value (profit, margin, demand). Without structured analysis, organisations often optimise for the wrong metrics.
+
 ---
 
 ## 6. Analytical Modules (3A–3H)
@@ -125,14 +128,14 @@ Each module includes SQL logic, results, and business interpretation.
 
 ### 3B — Profitability Analysis
 - **Models total profit** using aggregated CTEs
-- **Surfaces margin‑dilutive products** and high‑value SKUs
+- **Surfaces high‑margin SKUs** and highlights where demand, not margin, drives low profitability
 
 ### 3C — Declining Product Trends
 - **Uses 3‑month moving averages** to detect downward trends
 - **Supports lifecycle management** and pricing review
 
 ### 3D — Lowest‑Profit Products
-- **Identifies SKUs** that generate revenue but dilute margin
+- **Identifies SKUs** that generate low total profit due to low demand, not margin weakness
 - **Useful for SKU rationalisation** and cost review
 
 ### 3E — Top Value Customers

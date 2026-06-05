@@ -640,11 +640,12 @@ FETCH FIRST 20 ROWS ONLY;
 
 
 -- Insight:
--- None of the product skus are unprofitable
--- small number of SKUs generate the smallest contribution to margin.
--- may be priced too low relative to cost
--- may have low sales volume, reducing their ability to absorb fixed costs
--- may be candidates for price review, promotional strategy changes, or SKU rationalisation
+-- None of the SKUs are unprofitable — margins are healthy across the catalogue.
+-- Lowest-profit SKUs simply have very low sales volumes, not margin issues.
+-- These are long‑tail products that generate minimal total profit due to weak demand.
+-- Operational focus should be on demand drivers (visibility, relevance, seasonality), not cost structure.
+-- Candidates for SKU rationalisation or promotional support if low demand persists.
+
 
 
 /*============================================================
@@ -852,3 +853,5 @@ LIMIT 20;
    All queries written for PostgreSQL.
    Each section can be executed independently.
 */
+
+
